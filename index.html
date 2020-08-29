@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Minesweeper</title>
+    <link rel="shortcut icon" href="../../favicon.ico" />
+    <link rel="bookmark" href="../../favicon.ico" />
+
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script type="text/javascript" src="js.js"></script>
+</head>
+
+<body>
+    <label for="row" class="start">输入难度:</label>
+    <input type="number" name="row" class="start" id="row" value="10" disabled>
+    <div class="start">
+        <button onclick="gameUI()" class="start">start</button>
+    </div>
+    <div id="alter">
+        <div class="alterContent">
+            <p></p>
+        </div>
+        <div class="alterFooter">
+            <button onclick="exit()" class="alterButtons" id="exit">EXIT</button>
+            <button onclick="tryAgain()" class="alterButtons" id="restart">RESTART</button>
+        </div>
+    </div>
+
+    <script>document.getElementById('alter').hidden = true;</script>
+
+</body>
+
+</html>
